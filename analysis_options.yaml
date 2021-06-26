@@ -1,0 +1,14 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  errors:
+    missing_required_param: error
+    parameter_assignments: error
+
+linter:
+  rules:
+    always_put_required_named_parameters_first: false
+    avoid_classes_with_only_static_members: false
+    lines_longer_than_80_chars: true
+    sort_pub_dependencies: false
+    prefer_single_quotes: true
