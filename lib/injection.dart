@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 
-import 'core/theme/app_theme.dart';
+import 'core/theme/app_theme_data.dart';
 import 'feature/root/cubit/application_cubit.dart';
 import 'injection.config.dart';
 
@@ -13,8 +13,8 @@ Future<GetIt> configureInjector(String env) async {
   final gh = GetItHelper(getIt, env);
 
   gh.lazySingleton<ApplicationState>(
-    () => ApplicationState(
-      locale: const Locale('en', 'US'),
+    () => const ApplicationState(
+      locale: Locale('en', 'US'),
       theme: AppTheme.light,
     ),
   );

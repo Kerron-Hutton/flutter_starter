@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import '../../../../core/localization/app_localization.dart';
 import '../../../../core/route/app_route.dart';
 import '../../../../core/route/route_generator.dart';
+import '../../../../core/theme/app_theme_data.dart';
 import '../../../../injection.dart';
 import '../../cubit/application_cubit.dart';
 
@@ -29,11 +30,11 @@ class Application extends StatelessWidget {
       onGenerateRoute: RouteGenerator.generate,
       initialRoute: AppRoute.kHomePageRoute,
       supportedLocales: kSupportedLocales,
+      theme: AppThemeData.of(state.theme),
       debugShowCheckedModeBanner: false,
       builder: DevicePreview.appBuilder,
       title: 'Flutter Starter',
       locale: state.locale,
-      theme: state.theme,
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
