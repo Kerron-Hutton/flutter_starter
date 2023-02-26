@@ -4,24 +4,24 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.19.2 <3.0.0'
 
 dependencies:
   flutter_localizations:
     sdk: flutter
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  device_preview: ^0.7.3
-  google_fonts: ^2.1.0
-  flutter_bloc: ^7.0.1
-  injectable: ^1.4.1
-  equatable: ^2.0.3
-  lint: ^1.5.3
-  get_it:
+  cupertino_icons: ^1.0.5
+  device_preview: ^1.1.0
+  google_fonts: ^4.0.3
+  flutter_bloc: ^8.1.2
+  injectable: ^2.1.0
+  equatable: ^2.0.5
+  get_it: ^7.2.0
+  lint: ^2.0.1
 
 dev_dependencies:
-  injectable_generator: ^1.4.1
+  injectable_generator: ^2.1.4
   build_runner: ^2.0.5
   flutter_test:
     sdk: flutter
@@ -29,4 +29,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-   - assets/lang/
+    - assets/lang/
