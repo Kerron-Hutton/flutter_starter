@@ -59,11 +59,11 @@ class MobileHomePage extends StatelessWidget {
               children: [
                 Text(
                   AppLocalizations.translate(context, 'home.counter.message'),
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 8),
-                Text('$state', style: Theme.of(context).textTheme.headline3),
+                Text('$state', style: Theme.of(context).textTheme.displaySmall),
               ],
             ),
           ),

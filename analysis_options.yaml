@@ -1,6 +1,8 @@
 include: package:lint/analysis_options.yaml
 
 analyzer:
+  exclude:
+    - lib/injection.config.dart
   errors:
     missing_required_param: error
     parameter_assignments: error
@@ -9,6 +11,9 @@ linter:
   rules:
     always_put_required_named_parameters_first: false
     avoid_classes_with_only_static_members: false
+    avoid_multiple_declarations_per_line: false
+    always_use_package_imports: false
     lines_longer_than_80_chars: true
+    prefer_relative_imports: true
     sort_pub_dependencies: false
     prefer_single_quotes: true

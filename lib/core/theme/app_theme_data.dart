@@ -34,8 +34,10 @@ abstract class AppThemeData {
       visualDensity: VisualDensity.adaptivePlatformDensity,
       scaffoldBackgroundColor: appColor.primaryColor,
       textTheme: _textTheme.copyWith(
-        headline3: _textTheme.headline3!.copyWith(color: Colors.white),
-        headline4: _textTheme.headline4!.copyWith(color: Colors.white),
+        displaySmall: _textTheme.displaySmall!.copyWith(color: Colors.white),
+        headlineMedium: _textTheme.headlineMedium!.copyWith(
+          color: Colors.white,
+        ),
       ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         backgroundColor: Colors.amber,
